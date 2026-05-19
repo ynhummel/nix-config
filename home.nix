@@ -36,12 +36,16 @@
     # '')
     nerd-fonts.jetbrains-mono
     wezterm
+    stow
+    # Programming
     helix
+    # Terminal Tools
+    zoxide
     mc
     fzf
     bat
-    zoxide
-    # work
+    jq
+    # Work
     kubectl
   ];
 
