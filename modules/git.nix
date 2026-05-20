@@ -18,8 +18,8 @@
         aa = "add .";
         cm = "commit -m";
         pcurr = "!git push origin $(git branch --show-current)";
-        lg = "log --oneline";
-        lgg = "log --oneline --graph";
+        lo = "log --oneline";
+        lg = "log --oneline --graph";
       };
     };
   };
