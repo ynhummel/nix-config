@@ -17,6 +17,7 @@
 
   imports = [
     ./modules/emacs.nix
+    ./modules/git.nix
   ];
 
   # The home.packages option allows you to install Nix packages into your
@@ -37,16 +38,24 @@
     nerd-fonts.jetbrains-mono
     wezterm
     stow
+
     # Programming
     helix
+    simple-completion-language-server # Snippets for Helix
+    mpls # Markdown Preview Language Server
+
     # Terminal Tools
     zoxide
     mc
     fzf
     bat
     jq
+    ripgrep # using only as a dependency, have to test if removing it will break something
+
     # Work
     kubectl
+    lazydocker
+    grpcurl
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage

@@ -1,0 +1,36 @@
+{pkgs, ...}: {
+  programs.git = {
+    enable = true;
+
+    settings = {
+      core.editor = "hx";
+      init.defaultBranch = "main";
+      merge.conflictStyle= "zdiff3";
+      
+      user = {
+        name = "Yuri Nana Hummel";
+        email = "yuri.hummel@fretebras.com.br";
+      };
+      
+      alias = {
+        sw = "switch";
+        nb = "checkout -b";
+        aa = "add .";
+        cm = "commit -m";
+        pcurr = "!git push origin $(git branch --show-current)";
+        lg = "log --oneline";
+        lgg = "log --oneline --graph";
+      };
+    };
+  };
+
+  programs.delta = {
+    enable = true;
+    enableGitIntegration = true;
+    options = {
+      navigate = "true";
+      dark = "true";
+      side-by-side = "true";
+    };
+  };
+}
