@@ -50,6 +50,7 @@
     fzf
     bat
     jq
+    yq
     ripgrep # using only as a dependency, have to test if removing it will break something
 
     # Work

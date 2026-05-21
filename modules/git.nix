@@ -20,6 +20,8 @@
         pcurr = "!git push origin $(git branch --show-current)";
         lo = "log --oneline";
         lg = "log --oneline --graph";
+        df = "diff";
+        dc = "diff --cached";
       };
     };
   };
